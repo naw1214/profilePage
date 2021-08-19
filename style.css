@@ -109,8 +109,7 @@ p{
 
 .new-request{
     border: solid black ;
-    position: absolute;
-    top: 420px;
+    position: relative;
     right: 10px;
     height: 700px;
     width: 300px;
