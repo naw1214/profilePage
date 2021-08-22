@@ -4,98 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan's Profile</title>
     <link rel="stylesheet" href="style.css">
-    <title>Nate's Profile Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div id="container">
-        <div class="banner">
-            <div class="profile-bin">
-                <h2>Profile</h2>
-                <ul>
-                    <li>Home</li>
-                    <li class="bold-pro">My Profile</li>
-                    <li>Find Connections</li>
-                </ul>
-            </div>
-            <button>Sign Out</button>
-        </div>
-        
-        <div class="rowOne">
-        
-            <div class="user-profile">
-                <div class="profile-banner"></div>
-                <img src="user-circle.png" alt="" height="80px" class="user_img">
-                <div class="userinfo">
-                    <h3>User Info</h3>
-                    <h3>Fort Collins <img src="map-marker.png" alt="map-marker" height="30px"></h3> 
-                    <p>Info About Me | Software Developer |
-                        Food Conniessuer| Sports Addict
-                    </p>
-                    <h4 class=>Edit Settings <img src="gear.png" alt="gear" height="30px"></h4>
-                </div>
-            </div>
-            <div class="connections">
-                <div class="con-banner">
-                    <div class="banner-info">
-                        <button>2</button>
-                        <h3>Connection Requests</h3>         
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-2">
+                <div class="user-card">
+                    <div class="card-header">
+                        <img src="thekid.jpg" alt="jane-medium-avatar" class="avatar-m">
+                    </div>
+                    <div class="card-body">
+                        <h1>Nathan Wright</h1>
+                        <h3>
+                            <img src="map-marker.png" alt="pin" class="icon-s"> 
+                            Fort Collins
+                        </h3>
+                        <p>Developer | Nerd w/ Passion | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                        <p>
+                            <a href="#">
+                                <img src="gear.png" alt="gear" class="icon-s"> 
+                                edit profile
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="con-req">
-                    <div class="req-info">
-                        <img src="phil-s.jpg" alt="phil" height="80px">
-                        <h4>Phil K</h4>         
-                        <img src="accept-circle.png" alt="accept-circle" height="35">
-                        <img src="close-circle.png" alt="close-circle" height="35">        
+
+                <div class="card">
+                    <div class="header">
+                        Education
                     </div>
-                    <div class="req-info">
-                        <img src="todd-s.jpg" alt="todd" height="80px">
-                        <h4>Todd E</h4>         
-                        <img src="accept-circle.png" alt="accept-circle" height="35">
-                        <img src="close-circle.png" alt="close-circle" height="35">
+                    <div class="card-body">
+                        <h2>Coding Dojo Full Stack Bootcamp</h2>
+                        <p class="dates">Dec 2019 - Mar 2020</p>
+                        <p>Triple Black Belt in Pyton, C#, and MERN...</p>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-        <div class="rowTwo">
-            <div class="edu-content">
-                <h2>Education</h2>
-                <h2>Coding Dojo - Full Stack Developer</h2>
-                <h2>Aug 2020 - Nov 2020</h2>
-                <h3>Black Belt in Python, MERN, and C#</h3>
-            </div>
-            <div class="new-request">
-                <div class="req-ban">
-                    <button>500+</button>
-                    <h2>Your Connections</h2>
+            <!-- right column -->
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <span class="connections">2</span>
+                        Connection Requests
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="todd-s.jpg" alt="todd" class="avatar-s">
+                            <span>Todd E.</span>
+                        </span>
+                        <span class="end">
+                            <img src="accept-circle.png" alt="accept" class="avatar-s">
+                            <img src="close-circle.png" alt="decline" class="avatar-s">
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="phil-s.jpg" alt="phil" class="avatar-s">
+                            <span>Phil K.</span>
+                        </span>
+                        <span class="end">
+                            <img src="accept-circle.png" alt="accept" class="avatar-s">
+                            <img src="close-circle.png" alt="decline" class="avatar-s">
+                        </span>
+                    </div>
                 </div>
-                <div class="curr-cons">
-                    <img src="adrien-s.jpg" alt="adrien" height="45px"> 
-                    <h3>Adrien</h3>
+                <div class="card">
+                    <div class="header">
+                        <span class="connections">500+</span>
+                        Your Connections
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="adrien-s.jpg" alt="adrien" class="avatar-s">
+                            <span>Adrien D.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="anne-s.jpg" alt="anne" class="avatar-s">
+                            <span>Anne J.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="alayne-s.jpg" alt="alayne" class="avatar-s">
+                            <span>Alayne T.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="arry-s.jpg" alt="arry" class="avatar-s">
+                            <span>Arry Y.</span>
+                        </span>
+                    </div>
+                    <div class="footer">
+                        <a href="#">View More</a>
+                    </div>
                 </div>
-                <div class="curr-cons">
-                    <img src="alayne-s.jpg" alt="alayne-s" height="45px"> 
-                    <h3>Alayne</h3>
-                </div>
-                <div class="curr-cons">
-                    <img src="anne-s.jpg" alt="anne" height="45px"> 
-                    <h3>Anne</h3>
-                </div>
-                <div class="curr-cons">
-                    <img src="arry-s.jpg" alt="arry" height="45px"> 
-                    <h3>Arry</h3>
-                </div>
-                <div class="curr-cons">
-                    <img src="jane-m.jpg" alt="jane-m" height="45px"> 
-                    <h3>Jane</h3>
-                </div>
-                <div class="show-more">
-                    <h2>View More</h2>
-                </div>     
-                </div>
-            </div>
+            </div>  
         </div>
     </div>
 </body>

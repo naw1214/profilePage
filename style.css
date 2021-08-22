@@ -1,147 +1,168 @@
-#container{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
-.banner{
-    width: 100%;
-    height: 15%;
-    background-color: black;
-    color: white;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.top {
+    background-color: #333333;
+}
+
+.nav {
+    width: 1080px;
+    margin: 0 auto;
+    color: #ffffff;
+    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
     justify-content: space-around;
 }
-.profile-bin{
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 20px;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
 }
-ul{
-    display: inline-flex;
-    list-style: none;
-}
-li{
+
+.col, .col-2 {
     margin: 10px;
-}
-.bold-pro{
-    font-weight: bold;
-}
-button{
-    background-color: lightblue;
-    height: 50%;
-}
-.user-profile{
-    border: black solid;
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    padding-bottom: 10px;
-}
-.profile-banner{
-    background-color: lightblue;
-    width: 100%;
-    height: 20%;
-}
-.user_img{
-    position: absolute;
-    top: 120px;
     padding: 10px;
+    flex: 1;
 }
-.userinfo{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding: 10px;
+
+.col-2 {
+    flex: 2;
 }
-p{
-    inline-size: 250px;
-}
-.user-profile h4{
-    color: blue;
-    text-decoration: underline;
-}
-.rowOne{
-    display: flex;
-}
-.connections{
-    margin-top: 22px;
-    border: black solid;
-    width: 300px;
-    height: 300px;
-}
-.con-banner{
-    width: 100%;
-    height: 50px;
-    background-color: grey;
-    display: flex;
-    justify-content: space-evenly;
-}
-.banner-info{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 10px;
-}
-.con-banner button{
-    border-radius: 50%;
-}
-.banner-info h3{
-    margin: 0px;
-    padding-left: 10px;
-}
-.req-info{
+
+.flex-container {
+    width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
 }
-.rowTwo{
-    display: flex;
-}
-.edu-content{
-    width: 400px;
-    height: 300px;
-    margin-left: 20px;
-    border: solid black;
-}
-.edu-content h2, h3{
-    margin-left: 20px;
+
+.user-card, .card {
     width: 100%;
-    height: 55px;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
 }
 
-.new-request{
-    border: solid black ;
-    position: relative;
-    right: 10px;
-    height: 700px;
-    width: 300px;
-    margin-left: 25px;    
+.card-header {
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
 }
-.req-ban{
-    display: flex;
-    padding-top: 10px;
-    justify-content: space-around;
-    height: 50px;
-    width: inherit;
-    background-color: grey;
+
+.card-body {
+    padding: 20px;
 }
-.req-ban h2{
-    margin: 0px;
-    padding-left: 10px;
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
 }
-.req-ban button{
+
+.avatar-m {
     border-radius: 50%;
-    margin-top: 5px;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-.curr-cons{
+
+.icon-s {
+    height: 20px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+.header {
+    background-color: #333333;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 24px;
     display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-.show-more{
-    width: inherit;
-    height: 50px;
-    text-decoration: underline;
-    color: blue;
+    align-items: center;
 }
 
+.avatar-s {
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 10px;
+}
 
+.user-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
 
+.start, .end {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dates {
+    font-size: 20px;
+    color: #777;
+}
+
+.footer {
+    padding: 20px;
+    border-top: 2px solid #999;
+}
+
+.connections {
+    background-color: #eee;
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
