@@ -30,7 +30,7 @@
                         <img src="thekid.jpg" alt="jane-medium-avatar" class="avatar-m">
                     </div>
                     <div class="card-body">
-                        <h1>Nathan Wright</h1>
+                        <h1 class="name-tag">Nathan Wright</h1>
                         <h3>
                             <img src="map-marker.png" alt="pin" class="icon-s"> 
                             Fort Collins
@@ -38,7 +38,7 @@
                         <p>Developer | Nerd w/ Passion | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                         <p>
-                            <a href="#">
+                            <a href="#" onclick="change()">
                                 <img src="gear.png" alt="gear" class="icon-s"> 
                                 edit profile
                             </a>
@@ -63,27 +63,27 @@
             <div class="col">
                 <div class="card">
                     <div class="header">
-                        <span class="connections">2</span>
+                        <span class="connections-reqs">2</span>
                         Connection Requests
                     </div>
-                    <div class="user-line">
+                    <div class="user-line" onclick="touch()">
                         <span class="start">
                             <img src="todd-s.jpg" alt="todd" class="avatar-s">
                             <span>Todd E.</span>
                         </span>
                         <span class="end">
-                            <img src="accept-circle.png" alt="accept" class="avatar-s">
-                            <img src="close-circle.png" alt="decline" class="avatar-s">
+                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept()">
+                            <img src="close-circle.png" alt="decline" class="avatar-d"onclick="deny()">
                         </span>
                     </div>
-                    <div class="user-line">
+                    <div class="user-line-2" onclick="touchTwo()">
                         <span class="start">
                             <img src="phil-s.jpg" alt="phil" class="avatar-s">
                             <span>Phil K.</span>
                         </span>
                         <span class="end">
-                            <img src="accept-circle.png" alt="accept" class="avatar-s">
-                            <img src="close-circle.png" alt="decline" class="avatar-s">
+                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept()">
+                            <img src="close-circle.png" alt="decline" class="avatar-d" onclick="deny()">
                         </span>
                     </div>
                 </div>
@@ -123,5 +123,6 @@
             </div>  
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

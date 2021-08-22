@@ -129,13 +129,13 @@ a {
     align-items: center;
 }
 
-.avatar-s {
+.avatar-s, .avatar-a, .avatar-d {
     border-radius: 50%;
     height: 48px;
     margin-right: 10px;
 }
 
-.user-line {
+.user-line, .user-line-2 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -157,7 +157,7 @@ a {
     border-top: 2px solid #999;
 }
 
-.connections {
+.connections, .connections-reqs {
     background-color: #eee;
     color: #333;
     font-size: 20px;
