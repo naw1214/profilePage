@@ -63,33 +63,33 @@
             <div class="col">
                 <div class="card">
                     <div class="header">
-                        <span class="connections-reqs">2</span>
+                        <span class="connections-reqs" id="requests">2</span>
                         Connection Requests
                     </div>
-                    <div class="user-line" onclick="touch()">
+                    <div class="user-line" id="request-1">
                         <span class="start">
                             <img src="todd-s.jpg" alt="todd" class="avatar-s">
                             <span>Todd E.</span>
                         </span>
                         <span class="end">
-                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept()">
-                            <img src="close-circle.png" alt="decline" class="avatar-d"onclick="deny()">
+                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept('#request-1')">
+                            <img src="close-circle.png" alt="decline" class="avatar-d"onclick="deny('#request-1')">
                         </span>
                     </div>
-                    <div class="user-line-2" onclick="touchTwo()">
+                    <div class="user-line-2" id="request-2">
                         <span class="start">
                             <img src="phil-s.jpg" alt="phil" class="avatar-s">
                             <span>Phil K.</span>
                         </span>
                         <span class="end">
-                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept()">
-                            <img src="close-circle.png" alt="decline" class="avatar-d" onclick="deny()">
+                            <img src="accept-circle.png" alt="accept" class="avatar-a" onclick="accept('#request-2')">
+                            <img src="close-circle.png" alt="decline" class="avatar-d" onclick="deny('#request-2')">
                         </span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="header">
-                        <span class="connections">500+</span>
+                        <span class="connections" id="connections">498</span>
                         Your Connections
                     </div>
                     <div class="user-line">

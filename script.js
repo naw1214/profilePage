@@ -4,12 +4,28 @@ function change(){                       // Actual function called that changes 
     changeUser.innerText = "Not Nate"
 }
 
-var interact = document.querySelector(".user-line")
-var interact2 = document.querySelector(".user-line-2")
+// var interact = document.querySelector(".user-line")
+// var interact2 = document.querySelector(".user-line-2")
 
-function touch(){
-    interact.remove()
+// function touch(){
+//     interact.remove()
+// }
+// function touchTwo(){
+//     interact2.remove()
+// }  First Attempt
+
+var changeRequests = document.querySelector("#requests")
+var changeConnections = document.querySelector("#connections")
+
+function accept(id){
+    var element = document.querySelector(id)
+    element.remove()
+    changeRequests.innerText--
+    changeConnections.innerText++
 }
-function touchTwo(){
-    interact2.remove()
+
+function deny(id){
+    var element = document.querySelector(id)
+    element.remove()
+    changeRequests.innerText--
 }
